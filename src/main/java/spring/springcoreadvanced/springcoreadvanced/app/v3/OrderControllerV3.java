@@ -1,24 +1,24 @@
-package spring.springcoreadvanced.springcoreadvanced.v2;
+package spring.springcoreadvanced.springcoreadvanced.app.v3;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import spring.springcoreadvanced.springcoreadvanced.trace.TraceStatus;
-import spring.springcoreadvanced.springcoreadvanced.trace.hellotrace.HelloTraceV2;
+import spring.springcoreadvanced.springcoreadvanced.trace.logtrace.LogTrace;
 
 @RestController
 @RequiredArgsConstructor
-public class OrderControllerV2 {
+public class OrderControllerV3 {
 
-    private final OrderServiceV2 orderService;
-    private final HelloTraceV2 trace;
+    private final OrderServiceV3 orderService;
+    private final LogTrace trace;
 
-    @GetMapping("/v2/request")
+    @GetMapping("/v3/request")
     public String request(String itemId) {
         TraceStatus status = null;
         try {
             status = trace.begin("OrderController.request()");
-            orderService.orderItem(status.getTraceId(), itemId);
+            orderService.orderItem(itemId);
             trace.end(status);
             return "OK";
         } catch (Exception e) {

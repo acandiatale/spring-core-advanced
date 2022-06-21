@@ -1,4 +1,4 @@
-package spring.springcoreadvanced.springcoreadvanced.v2;
+package spring.springcoreadvanced.springcoreadvanced.app.v2;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

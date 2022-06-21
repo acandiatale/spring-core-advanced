@@ -1,4 +1,4 @@
-package spring.springcoreadvanced.springcoreadvanced.v1;
+package spring.springcoreadvanced.springcoreadvanced.app.v1;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
