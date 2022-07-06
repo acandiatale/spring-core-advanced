@@ -1,8 +1,8 @@
-package spring.springcoreadvanced.springcoreadvanced.trace.hellotrace.threadlocal;
+package spring.springcoreadvanced.springcoreadvanced.trace.threadlocal;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import spring.springcoreadvanced.springcoreadvanced.trace.hellotrace.threadlocal.code.FieldService;
+import spring.springcoreadvanced.springcoreadvanced.trace.threadlocal.code.FieldService;
 
 @Slf4j
 public class FieldServiceTest {
